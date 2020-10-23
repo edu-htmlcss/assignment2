@@ -329,6 +329,9 @@ p {
     margin: 0 0 10px 0;
 }
 
+
+/* ********* MEDIA QUERIES ********* */
+
 /* 
 If screen is smaller than 1200 pix:
 use more page, span more of grid columns
