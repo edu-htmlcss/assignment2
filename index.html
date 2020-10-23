@@ -22,11 +22,10 @@
             <input type="checkbox" id="showMenu">
             <label for="showMenu">
                 <div class="menuIcon">
-                        <div class="menuIcon__lines"></div>
-                        <div class="menuIcon__lines"></div>
-                        <div class="menuIcon__lines"></div>
-                    </div>
-                </a>
+                    <div class="menuIcon__lines"></div>
+                    <div class="menuIcon__lines"></div>
+                    <div class="menuIcon__lines"></div>
+                </div>
             </label>
             <ul>
                 <li>
@@ -66,19 +65,22 @@
                 namngivna enligt BEM. Navigationsmenyn använder a:hover för att
                 fälla ut undermenyer om skärmen är bredare än 600 pixlar. På
                 mindre skärmar används en dold checkbox-tag för att fälla ut och
-                in undermenyer. Oavsett skärmstorlek så flyttas sidans övriga
-                innehåll när en undermeny fälls ut. Jag är inte helt nöjd med
-                detta och testa en version där undermenyn lägger sig ovanpå
-                övriga sidan. Detta krävde att undermenyerna fick sin position
-                med "position: absolute" som gjorde det svårt att placera dem
-                snyggt när bredden på sidan ändras. Så det fick bli en
-                kompromiss. Sidans layout i stort är gjord med grid och layouten
-                för Portfolio-sektionen är gjord med flex box. Jag har inte tagit
-                med något från Bootstrap-ramverket. Sidan ska vara responsiv och
-                HTML och CSS validerar enligt W3C:s valideringstjänster.
+                in undermenyer.
+            </p>
+            <p> Detta är så klart inte perfekt då många touch-enheter har
+                betydligt högre upplösning än så. Men utan javascript verkar det
+                vara omöjligt att säkert identifiera om klienten stödjer hover 
+                eller touch. Media quaries för :hover stöds av de flesta 
+                webbläsare men inte av Firefox.
+            </p>
+            <p> Sidans layout i stort är gjord med grid och layouten
+                för Portfolio-sektionen är gjord med flex box. Jag har inte 
+                tagit med något från Bootstrap-ramverket. Sidan responsiv på så 
+                vis att den ändrar layout, skalar om vissa element och ändrar 
+                meny när bredden understiger 600px. HTML och CSS validerar 
+                enligt W3C:s valideringstjänster.
             </p>
         </section>
-
         <section class="widecolumn">
             <h2 class="center" id="portfolio">Portfolio</h2>
             <div class="portfolio">
@@ -127,7 +129,6 @@
                 </article>
             </div>
         </section>
-
         <section class="main">
             <h2>Lorem ipsum</h2>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin eros
@@ -142,7 +143,6 @@
                 leo porttitor non. Phasellus in est hendrerit, vulputate nibh sed, eleifend leo. Suspendisse urna
                 eros, elementum quis turpis id, commodo ultricies elit. </p>
         </section>
-
         <div class="footer">
             <p class="footer__text">Inlämningsuppgift 2 2020-10-23</p>
         </div>

@@ -358,11 +358,13 @@ set a shadow, offset 2 px, blur 5px, black with alpha transperancy 0.5 */
 }
 
 /* Set font and margins for all paragraph tags, 
-margin bottom to 10px, everything else to zero */
+margin bottom to 10px, everything else to zero 
+max width to 800px to limit lines running long*/
 
 p {
     font-family: 'Work Sans', sans-serif;
     margin: 0 0 10px 0;
+    max-width: 800px;
 }
 
 /* div container for "hamburger" menu icon */
@@ -419,7 +421,6 @@ change menu list item to use full width
     .header__title {
         color: #ffffff;
     }
-    /*temp*/
     .nav>ul {
         display: none;
     }
