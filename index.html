@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inlämningsuppgift 2 - Christian Berling</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">Portfolio</h1>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li>
+                    <input type="checkbox" id="dropdown_0_1" name="menu_group_1">
+                    <label for="dropdown_0_1">
+                        <a href="#">Start</a>
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="dropdown_1_1" name="menu_group_1">
+                    <label for="dropdown_1_1"><a>Portfolio</a></label>
+                    <span class="nav__icon nav__icon--down">&#9660;</span>
+                    <span class="nav__icon nav__icon--up">&#9650;</span>
+                    <ul>
+                        <li><a href="#portfolio">Portfolio section</a></li>
+                        <li><a href="portfolio1.html" target="_blank">Portfolio 1</a></li>
+                        <li><a href="portfolio2.html" target="_blank">Portfolio 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" id="dropdown_2_1" name="menu_group_1">
+                    <label for="dropdown_2_1"><a>My Github</a></label>
+                    <span class="nav__icon nav__icon--down">&#9660;</span> 
+                    <span class="nav__icon nav__icon--up">&#9650;</span> 
+                    <ul>
+                        <li><a href="https://github.com/edu-htmlcss/" target="_blank">All assignments</a></li>
+                        <li><a href="https://github.com/edu-htmlcss/assignment1" target="_blank">Assignment 1</a></li>
+                        <li><a href="https://github.com/edu-htmlcss/assignment2" target="_blank">Assignment 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section class="main">
+            <h2>Inlämningsuppgift 2</h2>
+            <p> Header image skalas med bredden av viewport. Rubriken ovanpå 
+                bilden skalas med clamp. De flesta CSS-klasser och subklasser är 
+                namngivna enligt BEM. Navigationsmenyn använder a:hover för att 
+                fälla ut undermenyer om skärmen är bredare än 600 pixlar. På 
+                mindre skärmar används en dold checkbox-tag för att fälla ut och
+                in undermenyer. Oavsett skärmstorlek så flyttas sidans övriga 
+                innehåll när en undermeny fälls ut. Jag är inte helt nöjd med 
+                detta och testa en version där undermenyn lägger sig ovanpå 
+                övriga sidan. Detta krävde att undermenyerna fick sin position
+                med "position: absolute" som gjorde det svårt att placera dem 
+                snyggt när bredden på sidan ändras. Så det fick bli en 
+                kompromiss. Sidans layout i stort är gjord med grid och layouten
+                för Portfolio-sektionen är gjord med flex box. Jag har inte tagit
+                med något från Bootstrap-ramverket. Sidan ska vara responsiv och
+                HTML och CSS validerar enligt W3C:s valideringstjänster. 
+            </p>
+        </section>
+
+        <section class="widecolumn">
+            <h2 class="center" id="portfolio">Portfolio</h2>
+            <div class="portfolio">
+                <a href="portfolio1.html" target="_blank">
+                    <article class="portfolio__item">
+                        <img src="images/nyc_portf1.jpg" class="portfolio__img"
+                        alt="Portfolio card image Manhattan skyline with Empire state building">
+                        <div class="portfolio__text"><h5 class="portfolio__heading">Portfolio 1</h5>Placeholder link to Portfolio Item 1</div>
+                    </article>
+                </a>
+                <a href="portfolio2.html" target="_blank">
+                    <article class="portfolio__item">
+                        <img src="images/nyc_portf2.jpg" class="portfolio__img"
+                        alt="Portfolio card image Statue of Liberty">
+                        <div class="portfolio__text">
+                            <h5 class="portfolio__heading">Portfolio 2</h5>
+                            Placeholder link to Portfolio Item 2
+                        </div>
+                    </article>
+                </a>
+                <article class="portfolio__item">
+                    <img src="images/nyc_portf3.jpg" class="portfolio__img"
+                    alt="Portfolio card image Seagull in front of Brooklyn bridge">
+                    <div class="portfolio__text">
+                        <h5 class="portfolio__heading">Emty</h5>
+                        Empty
+                    </div>
+                </article>
+                <article class="portfolio__item">
+                    <img src="images/nyc_portf4.jpg" class="portfolio__img"
+                    alt="Portfolio card image Fire station with fire truck">
+                    <div class="portfolio__text">
+                        <h5 class="portfolio__heading">Emty</h5>
+                        Empty
+                    </div>
+                </article>
+                <article class="portfolio__item">
+                    <img src="images/nyc_portf5.jpg" class="portfolio__img"
+                    alt="Portfolio card image Rooftop water cistern">
+                    <div class="portfolio__text">
+                        <h5 class="portfolio__heading">Emty</h5>
+                        Empty
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="main">
+            <h2>Lorem ipsum</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin eros
+                diam, eu lacinia nulla ullamcorper vel. Fusce non dolor neque. Curabitur mauris velit, tempor
+                et neque sed, mollis interdum odio. Fusce ac nisl leo. In at risus lorem. Aenean aliquam sed
+                quam sed tincidunt. Ut condimentum, nunc congue tempor pulvinar, nunc tellus vulputate turpis,
+                sit amet porta mi leo quis erat.</p>
+            <p> Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam ac quam velit. Donec tempus
+                lacus vel nisi ultrices euismod. In imperdiet risus nisi, nec facilisis magna facilisis sit amet.
+                Maecenas tristique augue et efficitur semper. Suspendisse pellentesque bibendum elit et placerat.
+                Nulla ut mauris eget arcu porttitor egestas vitae ac orci. Cras facilisis lacus est, at feugiat
+                leo porttitor non. Phasellus in est hendrerit, vulputate nibh sed, eleifend leo. Suspendisse urna
+                eros, elementum quis turpis id, commodo ultricies elit. </p>
+        </section>
+
+        <div class="footer">
+            <p class="footer__text">Inlämningsuppgift 2 2020-10-23</p>
+        </div>
+    </div>
+</body>
+
+</html>
